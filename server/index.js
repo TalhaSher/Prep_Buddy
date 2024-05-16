@@ -86,6 +86,8 @@ app.post("/ai", async (req, res) => {
   try {
     const prompt = req.body.prompt;
     const history = req.body.history;
+    console.log("prompt : ", prompt);
+    console.log("history : ", history);
     const result = await generate(prompt, history);
     res.status(200).json(result);
   } catch (error) {
