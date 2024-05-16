@@ -143,7 +143,7 @@ export default function IconButtons(props) {
                 </IconButton>
               </Box>
               <Divider />
-              <List sx={{ height: "72vh" }}>
+              <List sx={{ height: "75vh" }}>
                 {chat.map((singleChat, i) => (
                   <ListItem
                     sx={{
@@ -187,10 +187,19 @@ export default function IconButtons(props) {
                 WebkitBackdropFilter: "blur(8.4px)",
                 border: "1px solid rgba(248, 255, 253, 0.17)",
                 marginTop: "0.6rem",
+                position: "absolute",
+                left: 0,
+                bottom: 0,
+                right: 0,
               }}
             >
               <form onSubmit={formSubmission}>
-                <Box display="flex" sx={{ margin: "1rem 1rem" }}>
+                <Box
+                  display="flex"
+                  sx={{
+                    margin: "1rem 1rem",
+                  }}
+                >
                   <TextField
                     sx={{
                       marginTop: "0.2rem",
